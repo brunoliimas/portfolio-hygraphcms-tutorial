@@ -62,7 +62,7 @@ export const HeroSection = () => {
 
                 </div>
                 <Image
-                className="mb-6 lg:mb-0 w-[300px] h-[300px] lg:w-[420px] lg:h-[404px] shadow-2xl rounded-lg object-cover"
+                className="mb-6 lg:mb-0 w-[300px] h-[300px] lg:w-[420px] lg:h-[404px] shadow-2xl rounded-lg object-cover self-center"
                     width={420}
                     height={420}
                     src="/images/avatar-02.gif"
