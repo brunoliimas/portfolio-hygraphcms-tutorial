@@ -31,7 +31,11 @@ export const HeroSection = () => {
                 <div className="w-full lg:max-w-[530px]">
                     <p className="font-fira text-emerald-400">Olá, meu nome é</p>
                     <h2 className="text-4xl font-medium mt-2">Bruno Lima</h2>
-                    <p className="text-gray-400 my-6 text-sm sm:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore culpa, recusandae libero vel, harum, similique illum commodi nostrum at voluptatem debitis voluptate magnam animi natus. Perferendis officia repudiandae perspiciatis totam!</p>
+                    <div className="text-gray-400 my-6 text-sm sm:text-base">
+                    <p className="mb-1">Desenvolvedor Front End com conhecimentos em ReactJS e NextJS, com habilidades avançadas em HTML, CSS e JavaScript.</p>
+                    <p className="mb-1">Paixão por criar interfaces interativas e responsivas, entregando soluções de qualidade. Abordagem focada no usuário, trabalhando em equipe para cumprir prazos e garantir a qualidade. Sempre atualizado nas últimas tendências de design e desenvolvimento.</p>
+                    <p className="font-bold text-emerald-400 text-xl underline">Disponível para novos projetos.</p>
+                    </div>
                     <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
                         {Array.from({ length: 7 }).map((_, index) => (
                             <TechBadge name='NextJS' />
@@ -62,7 +66,7 @@ export const HeroSection = () => {
                 className="mb-6 lg:mb-0 w-[300px] h-[300px] lg:w-[420px] lg:h-[404px] shadow-2xl rounded-lg object-cover"
                     width={420}
                     height={420}
-                    src="/images/profile-pic.png"
+                    src="/images/avatar-02.gif"
                     alt="Foto de perfil"
                 />
             </div>
