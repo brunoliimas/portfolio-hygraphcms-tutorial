@@ -26,15 +26,14 @@ const MOCK_CONTACTS = [
 
 export const HeroSection = () => {
     return (
-        <section className="w-full h-screen bg-hero-image bg-cover bg-no-repeat bg-center flex flex-col justify-center pb-10 sm:pb-32 py-32 lg:pb-[110px]">
+        <section className="w-full sm:h-screen bg-hero-image bg-cover bg-no-repeat bg-center flex flex-col justify-center pb-10 sm:pb-32 py-32 lg:pb-[110px]">
             <div className="container flex items-start justify-between flex-col-reverse md:flex-row">
                 <div className="w-full lg:max-w-[530px]">
                     <p className="font-fira text-emerald-400">Olá, meu nome é</p>
                     <h2 className="text-4xl font-medium mt-2">Bruno Lima</h2>
                     <div className="text-gray-400 my-6 text-sm sm:text-base">
-                    <p className="mb-1">Desenvolvedor Front End com conhecimentos em ReactJS e NextJS, com habilidades avançadas em HTML, CSS e JavaScript.</p>
-                    <p className="mb-1">Paixão por criar interfaces interativas e responsivas, entregando soluções de qualidade. Abordagem focada no usuário, trabalhando em equipe para cumprir prazos e garantir a qualidade. Sempre atualizado nas últimas tendências de design e desenvolvimento.</p>
-                    <p className="font-bold text-emerald-400 text-xl underline">Disponível para novos projetos.</p>
+                    <p className="mb-1">Desenvolvedor Front End com conhecimentos em ReactJS e NextJS, com habilidades avançadas em HTML, CSS e JavaScript. Paixão por criar interfaces interativas e responsivas, entregando soluções de qualidade. Abordagem focada no usuário, trabalhando em equipe para cumprir prazos e garantir a qualidade. Sempre atualizado nas últimas tendências de design e desenvolvimento.</p>
+                    <p className="font-bold text-emerald-400 text-lg md:text-xl underline">Disponível para novos projetos.</p>
                     </div>
                     <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
                         {Array.from({ length: 7 }).map((_, index) => (
