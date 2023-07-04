@@ -1,6 +1,6 @@
 import { SectionTitle } from "@/app/components/section-title"
 import { KnowCard } from "./know-card"
-import { TbBrandNextjs, TbBrandReact, TbBrandReactNative, TbBrandTailwind } from "react-icons/tb"
+import { TbBrandNextjs, TbBrandReact, TbBrandReactNative, TbBrandTailwind, TbBrandRedux } from "react-icons/tb"
 import { FaNodeJs } from 'react-icons/fa'
 
 export const KnowTechs = () => {
@@ -29,6 +29,11 @@ export const KnowTechs = () => {
             icon: <FaNodeJs size={30} />,
             name: 'NodeJS',
             startDate: '2021-06-01'
+        },
+        {
+            icon: <TbBrandRedux size={30} />,
+            name: 'Redux',
+            startDate: '2022-06-01'
         },
     ]
     return (
