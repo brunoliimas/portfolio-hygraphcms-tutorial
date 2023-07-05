@@ -2,6 +2,10 @@ import { Inter, Fira_Code } from 'next/font/google'
 import './globals.css'
 import { ReactNode } from 'react'
 import { Header } from './components/header'
+import { Footer } from './components/footer'
+import { ContactForm } from './components/contact-form'
+import { BackTop } from './components/back-top'
+
 
 
 const inter = Inter({
@@ -21,6 +25,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <Header />
         {children}
+        <ContactForm />
+        <Footer />
+        <BackTop />
       </body>
     </html>
   )

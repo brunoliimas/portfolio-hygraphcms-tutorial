@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image"
 import { TechBadge } from "@/app/components/tech-badge"
 import { Button } from "@/app/components/button"
@@ -25,6 +27,12 @@ const MOCK_CONTACTS = [
 
 
 export const HeroSection = () => {
+    const handleContact = () => {
+        const contactSection = document.querySelector('#contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
     return (
         <section className="w-full sm:h-screen bg-hero-image bg-cover bg-no-repeat bg-center flex flex-col justify-center pb-10 sm:pb-32 py-32 lg:pb-[110px]">
             <div className="container flex items-start justify-between flex-col-reverse md:flex-row">
@@ -32,8 +40,8 @@ export const HeroSection = () => {
                     <p className="font-fira text-emerald-400">Olá, meu nome é</p>
                     <h2 className="text-4xl font-medium mt-2">Bruno Lima</h2>
                     <div className="text-gray-400 my-6 text-sm sm:text-base">
-                    <p className="mb-1">Desenvolvedor Front End com conhecimentos em ReactJS e NextJS, com habilidades avançadas em HTML, CSS e JavaScript. Paixão por criar interfaces interativas e responsivas, entregando soluções de qualidade. Abordagem focada no usuário, trabalhando em equipe para cumprir prazos e garantir a qualidade. Sempre atualizado nas últimas tendências de design e desenvolvimento.</p>
-                    <p className="font-bold text-emerald-400 text-lg md:text-xl underline">Disponível para novos projetos.</p>
+                        <p className="mb-1">Desenvolvedor Front End com conhecimentos em ReactJS e NextJS, com habilidades avançadas em HTML, CSS e JavaScript. Paixão por criar interfaces interativas e responsivas, entregando soluções de qualidade. Abordagem focada no usuário, trabalhando em equipe para cumprir prazos e garantir a qualidade. Sempre atualizado nas últimas tendências de design e desenvolvimento.</p>
+                        <p className="font-bold text-emerald-400 text-lg md:text-xl underline">Disponível para novos projetos.</p>
                     </div>
                     <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
                         {Array.from({ length: 7 }).map((_, index) => (
@@ -42,7 +50,7 @@ export const HeroSection = () => {
                     </div>
 
                     <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
-                        <Button className="w-max shadow-button">
+                        <Button className="w-max shadow-button" onClick={handleContact}>
                             Entre em contato
                             <HiArrowNarrowRight size={18} />
                         </Button>
@@ -62,7 +70,7 @@ export const HeroSection = () => {
 
                 </div>
                 <Image
-                className="mb-6 lg:mb-0 w-[300px] h-[300px] lg:w-[420px] lg:h-[404px] shadow-2xl rounded-lg object-cover self-center"
+                    className="mb-6 lg:mb-0 w-[300px] h-[300px] lg:w-[420px] lg:h-[404px] shadow-2xl rounded-lg object-cover self-center"
                     width={420}
                     height={420}
                     src="/images/avatar-02.gif"
